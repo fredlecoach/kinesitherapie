@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centre de kinésithérapie</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg  navbar-dark bg-primary">
+  <a class="navbar-brand mx-3" href="index.html"><img src="./images/logo_kine.png" alt="logo" id="logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto offset-3" id="nav-fs">
+      <li class="nav-item mx-4"><a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a></li>
+      <li class="nav-item mx-4"><a class="nav-link" href="pathologies.html">Pathologies</a></li>
+      <li class="nav-item mx-4"><a class="nav-link" onclick="rendezVous()" href="rdv.html">Rendez-vous</a></li>
+      <li class="nav-item mx-4"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+      <li class="nav-item mx-4"><a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- carousel -->
+<div id="carouselExample" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner d-flex align-items-center" style="height: 300px;">
+    <div class="carousel-item active">
+      <img src="./images/mal de dos.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-caption">
+      <p class="text-dark bg-white w-75 mx-auto">Consultation du lundi au samedi : uniquement sur rendez-vous | 
+        Pour plus d'informations consulter <a href="#horaires">nos horaires</a>
+      </p>
+    </div>
+    <div class="carousel-item">
+      <img src="./images/femme-enceinte-toucher-son-ventre.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/reeducation-physique-complete-femme.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a role="button" class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden"></span>
+  </a>
+  <a role="button" class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden"></span>
+  </a>
+</div>
+<!-- fin carousel -->
+
+<!-- début du main -->
+<main class="container mb-3">
+  <div class="mt-3" style="text-align: justify;">
+  <section>
+    <h5 class="text-center display-4 mb-3 border">Les douleurs articulaires</h5>
+    <h3 class="text-info">Les causes <i class="bi bi-droplet"></i></h3>
+      <p>La grande majorité des articulationssont mobilisées fréquemment, car elles interviennent dans la réalisation de nombreux mouvements. Du fait de leur sollicitation régulière, ces structures anatomiques complexes sont logiquement plus fragiles et présentent plus de risques d’être lésées. Ce n’est d’ailleurs pas un hasard si les sportifs font partie des populations le plus souvent concernées par les douleurs articulaires. L’usure prématurée du cartilage, à l’origine de l’arthrose, représente l’une des principales causes de douleurs, notamment chez les personnes de plus de 50 ans. Mais les traumatismes peuvent également engendrer ce type de symptômes. Les élongations, les entorses ou encore les tendinites peuvent ainsi générer d’importantes douleurs au niveau des articulations concernées.
+      </p>
+  </section>
+  <section><h3 class="text-info">Les conséquences <i class="bi bi-flag-fill"></i></h3>
+      <p>Véritables liaisons entre différentes structures osseuses, les articulations jouent un rôle primordial au sein du corps humain. Par conséquent, il est facile de comprendre que les douleurs articulaires peuvent considérablement altérer la qualité de vie d’un individu, surtout lorsque celles-ci s’installent dans la chronicité. En effet, les articulations sont très largement impliquées dans le développement des membres et la réalisation des mouvements. Mais lorsqu’elles se «grippent», c’est tout le fonctionnement musculaire, osseux, ligamentaire et tendineux qui est directement impacté. Selon l’intensité des douleurs ressenties, la personne aura tendance à éviter la mobilisation de son articulation. Les muscles situés autour ne seront alors plus suffisamment mobilisés et finiront par s’affaiblir progressivement.</p>
+  </section>
+  <section><h3 class="text-info">Les solutions <i class="bi bi-clipboard2-heart-fill"></i></h3>
+      <p>Être victime de douleurs articulaires n’est pas une fatalité. De nombreuses alternatives efficaces existent. D’abord, il est indispensable de déterminer précisément les causes de ces douleurs. Si ces dernières sont secondaires à un effort physique, il est souvent recommandé de mettre l’articulation concernée au repos afin de faciliter la cicatrisation des lésions ou la résorption d’une potentielle inflammation. Il faut également savoir que l’alimentation est un paramètre à prendre en compte. Ce que nous mangeons influe directement sur la santé de nos articulations. Ainsi, les aliments riches en vitamines, en minéraux ou encore en oméga-3 sont à privilégier. De plus, adopter un régime alimentaire plus équilibré permet de perdre du poids. Or, le surpoidset l’obésité sont deux importants facteurs de risques de développer des douleurs articulaires. Dans certains cas, il sera aussi nécessaire d’adapter sa pratique sportive pour éviter la récurrence des traumatismes.</p>
+  </section>
+  </div>
+
+  <div id="major">
+      <video controls height="500" width="100%" type="video/mp4">
+      <source src="./videos/Cette découverte sur lépaule est HALLUCINANTE.mp4">
+      </video>
+  </div>
+  
+</main>
+
+<!-- footer -->
+
+<footer class="bg-light mx-auto">
+  <div class="row row-cols-3 list-unstyled  offset-1">
+    <div class="col">
+      <h5>Nos praticiens</h5>
+      <li>Maxime Roblot-Coulanges</li>
+      <li>Joahanna Langlet</li>
+      <li> Gregory Katel</li>
+    </div>
+    <div class="col">
+      <h5>Informations</h5>
+      <a href="horaires.html"><li id="horaires">Horaires de consultations </li></a> 
+      <li> 01.49.37.78.56 </li>
+      <li>87 rue des bigornots <br> 75002 Paris</li>
+    </div>
+    <div class="col">
+      <h5>Plan de site</h5>
+      <li>Fonctionnement</li>
+      <li>CGU</li>
+    </div>
+</footer>
+
+<div class="bg-primary">
+  <small class="mx-2 text-light">&copy copyright Frédéric Roblot-Coulanges</small>
+</div>
+
+
+
+
+</body>
+</html>
+

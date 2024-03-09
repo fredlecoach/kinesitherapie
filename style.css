@@ -1,0 +1,57 @@
+#logo{
+  width: 5em;
+}
+
+#nav-fs{
+  font-size: 25px;
+}
+
+#horaires{
+  color: black;
+  text-decoration: none;
+}
+
+#horaires:hover{
+  color: blue;
+}
+
+/* *********** création de la table ************* */
+
+table{
+  width: 80%;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid grey;
+  margin: 50px;
+}
+
+th, td{
+  border: 1px solid grey;
+  padding: 7px;
+}
+
+thead th{
+  background-color: rgb(211, 202, 202);
+  font-size: 20px;
+}
+
+tbody th{
+  background-color: rgb(172, 157, 135);
+  color: white;
+}
+
+#tarifs{
+  display: flex;
+  justify-content: center;
+  margin-top: -50px
+}
+caption{
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #017AFF;
+  padding: 7px;
+  border-radius: 10px 10px 0px 0px;
+  word-spacing: 20px;
+}
+
