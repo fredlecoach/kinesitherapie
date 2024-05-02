@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Centre de kinésithérapie</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
@@ -22,9 +24,10 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto offset-3" id="nav-fs">
-      <li class="nav-item mx-4"><a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a></li>
+      <li class="nav-item mx-4"><a class="nav-link a-underline" href="index.html">Accueil <span class="sr-only">(current)</span></a></li>
       <li class="nav-item mx-4"><a class="nav-link" href="pathologies.html">Pathologies</a></li>
-      <li class="nav-item mx-4"><a class="nav-link" onclick="rendezVous()" href="rdv.html">Rendez-vous</a></li>
+      <li class="nav-item mx-4"><a class="nav-link" href="rdv.html">Rendez-vous</a></li>
+      <li class="nav-item mx-4"><a class="nav-link" href="produits.html">Produits</a></li>
       <li class="nav-item mx-4"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
       <li class="nav-item mx-4"><a class="nav-link" href="contact.html">Contact</a>
       </li>
@@ -70,6 +73,32 @@
       <p>La grande majorité des articulationssont mobilisées fréquemment, car elles interviennent dans la réalisation de nombreux mouvements. Du fait de leur sollicitation régulière, ces structures anatomiques complexes sont logiquement plus fragiles et présentent plus de risques d’être lésées. Ce n’est d’ailleurs pas un hasard si les sportifs font partie des populations le plus souvent concernées par les douleurs articulaires. L’usure prématurée du cartilage, à l’origine de l’arthrose, représente l’une des principales causes de douleurs, notamment chez les personnes de plus de 50 ans. Mais les traumatismes peuvent également engendrer ce type de symptômes. Les élongations, les entorses ou encore les tendinites peuvent ainsi générer d’importantes douleurs au niveau des articulations concernées.
       </p>
   </section>
+  
+  <table class="table mx-auto ">
+    <thead>
+        <tr>
+            <th>Taille en cm</th>
+            <th>Poids en kg</th>
+            <th>Résultat IMC</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><input type="number" placeholder="Taille (cm)" id="taille"  class="p-3"></td>
+            <td><input type="number" placeholder="Poids (kg)" id="poids"  class="p-3"></td>
+            <td><input type="text" placeholder="IMC" id="resultat" readonly  class="p-3"></td>
+            <td><input type="button" value="Calculer" class="btn btn-info" onclick="calculerIMC()"></td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4" id="imcDescription" class="p-3">Votre IMC sera affiché ici.</td>
+        </tr>
+    </tfoot>
+  </table>
+  <p class="mb-5 bg-warning text-center rounded py-3">Le surpoids engendre en grande majorité des pathologies articulaires dûes aux efforts inappropriés du corps pour soutenir sa masse.</p>
+
   <section><h3 class="text-info">Les conséquences <i class="bi bi-flag-fill"></i></h3>
       <p>Véritables liaisons entre différentes structures osseuses, les articulations jouent un rôle primordial au sein du corps humain. Par conséquent, il est facile de comprendre que les douleurs articulaires peuvent considérablement altérer la qualité de vie d’un individu, surtout lorsque celles-ci s’installent dans la chronicité. En effet, les articulations sont très largement impliquées dans le développement des membres et la réalisation des mouvements. Mais lorsqu’elles se «grippent», c’est tout le fonctionnement musculaire, osseux, ligamentaire et tendineux qui est directement impacté. Selon l’intensité des douleurs ressenties, la personne aura tendance à éviter la mobilisation de son articulation. Les muscles situés autour ne seront alors plus suffisamment mobilisés et finiront par s’affaiblir progressivement.</p>
   </section>

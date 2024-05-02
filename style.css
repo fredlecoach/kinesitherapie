@@ -1,3 +1,11 @@
+* {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
 #logo{
   width: 5em;
 }
@@ -54,4 +62,59 @@ caption{
   border-radius: 10px 10px 0px 0px;
   word-spacing: 20px;
 }
+ /* création de la vue des produits */
 
+ .div-pdt{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+ 
+  .img-pdt{
+    width: 300px;
+    height: 400px;;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: auto;
+    margin: 10px ;
+
+  }
+  .img-pdt:hover{
+    transform: scale(1.1);
+  }
+
+  .nom-pdt{
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px ;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  article{
+    margin: 50px ;
+  }
+
+  .prix-pdt{
+    font-weight: bold;
+  }
+
+  /* reglages page contact */
+.passage:hover{
+  transform: scale(1.1);
+  z-index: 1;
+
+}
+
+.coordonnees{
+  display: none
+}
+.passage:hover .coordonnees{
+  display: block;
+}
+
+.container-contact{
+  margin-bottom: 50px
+}

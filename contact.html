@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Centre de kinésithérapie</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
@@ -21,9 +24,10 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto offset-3" id="nav-fs">
-      <li class="nav-item mx-4"><a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a></li>
+      <li class="nav-item mx-4"><a class="nav-link a-underline" href="index.html">Accueil <span class="sr-only">(current)</span></a></li>
       <li class="nav-item mx-4"><a class="nav-link" href="pathologies.html">Pathologies</a></li>
-      <li class="nav-item mx-4"><a class="nav-link" onclick="rendezVous()" href="rdv.html">Rendez-vous</a></li>
+      <li class="nav-item mx-4"><a class="nav-link" href="rdv.html">Rendez-vous</a></li>
+      <li class="nav-item mx-4"><a class="nav-link" href="produits.html">Produits</a></li>
       <li class="nav-item mx-4"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
       <li class="nav-item mx-4"><a class="nav-link" href="contact.html">Contact</a>
       </li>
@@ -60,59 +64,72 @@
 
 
 <!-- début présentation du personnel -->
-<h1 class="display-4 text-center">Nos kinésithérapeuthes</h1>
+<h1 class="display-4 text-center my-4">Nos kinésithérapeuthes</h1>
 
-<div class=" container">
-  <div class="row row-cols-3 d-flex justify-content-center">
-    <div class="card mb-3" style="max-width: 18rem;">
-      <div class="card-header bg-primary text-light ">Kinésithérapeuthe</div>
-      <div class="card-body">
-        <img src="./images/malheureuse-femme-asiatique-main-toucher-poignet-main-blessee-par-travail-exercice-fond-blanc.jpg" alt="" class="w-100">
-        <h5 class="card-title">Maxime Roblot-Coulanges</h5>
-        <p class="card-text">Diplômé de la Haute école ELA Louvain-en-Héno</p>
-      </div>
-    </div>
-    <div class="card text-bg-secondary mb-3 mx-2" style="max-width: 18rem;">
-      <div class="card-header bg-info text-light">Ergothérapeuthe</div>
-      <div class="card-body">
-        <img src="./images/max.jpg" alt="" class="w-100">
-        <h5 class="card-title">Marie Delagolère</h5>
-        <p class="card-text">Diplômé de la HEP | spécialité handicapés</p>
-      </div>
-    </div>
-    <div class="card text-bg-success mb-3" style="max-width: 18rem;">
-      <div class="card-header bg-primary text-light">Ostéopathe</div>
-      <div class="card-body">
-        <img src="./images/réeducation.jpg" alt="" class="w-100">
-        <h5 class="card-title">Romain Joly</h5>
-        <p class="card-text">Diplômé de l'école d'ostéopathes du Nord-Pas-de-Calais</p>
-      </div>
-    </div>
-    <div class="card text-bg-danger mb-3" style="max-width: 18rem;">
-      <div class="card-header">Header</div>
-      <div class="card-body">
-        <h5 class="card-title">Danger card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-    <div class="card text-bg-warning mb-3 mx-2" style="max-width: 18rem;">
-      <div class="card-header">Header</div>
-      <div class="card-body">
-        <h5 class="card-title">Warning card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-    <div class="card text-bg-info mb-3" style="max-width: 18rem;">
-      <div class="card-header">Header</div>
-      <div class="card-body">
-        <h5 class="card-title">Info card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
- 
- 
-    </div>
-    
-  </div>
+<div class=" container container-contact">
+  <div class="d-flex justify-content-center mb-3"><span>Passer sur la fiche pour avoir les coordonnées *</span></div>
   
+  <div class="row row-cols-3 d-flex justify-content-center">
+
+    <div class="card text-bg-success mb-3 passage text-center" style="max-width: 18rem;">
+      <div class="card-header bg-primary text-light">kinésithérapeuthe</div>
+      <h5 class="card-title py-2">Maxime Roblot-Coulanges</h5>
+      <div class="card-body">
+        <img src="./images/maxime.jpg" alt="" class="w-100 object-fit-cover" style="height:200px">
+        <p class="card-text coordonnees">Tel : 06.24.18.89.57 <br> Mail : maxime@laclinique.fr</p>
+      </div>
+    </div>
+    <div class="card text-bg-secondary mb-3 mx-2 passage text-center" style="max-width: 18rem;">
+      <div class="card-header bg-info text-light">Ergothérapeuthe</div>
+      <h5 class="card-title py-2">Marie Delagolère</h5>
+      <div class="card-body">
+        <img src="./images/marie.jpg" alt="" class="w-100 object-fit-cover" style="height:200px">
+        <p class="card-text coordonnees">Tel : 06.12.09.36.43 <br> Mail : marie@laclinique.fr</p>
+      </div>
+    </div>
+    <div class="card text-bg-success mb-3 passage text-center" style="max-width: 18rem;">
+      <div class="card-header bg-primary text-light">Ostéopathe</div>
+      <h5 class="card-title py-2">Aurélie Joly</h5>
+      <div class="card-body">
+        <img src="./images/aurelie.jpg" alt="" class="w-100 object-fit-cover" style="height:200px">
+        <p class="card-text coordonnees">Tel : 06.74.98.69.13 <br> Mail : romain@laclinique.fr</p>
+      </div>
+    </div>
+
+  </div>    
+</div>
+  
+<!-- footer -->
+
+<footer class="bg-light mx-auto">
+  <div class="row row-cols-3 list-unstyled  offset-1">
+    <div class="col">
+      <h5>Nos praticiens</h5>
+      <li>Maxime Roblot-Coulanges</li>
+      <li>Joahanna Langlet</li>
+      <li> Gregory Katel</li>
+    </div>
+    <div class="col">
+      <h5>Informations</h5>
+      <a href="horaires.html"><li id="horaires">Horaires de consultations </li></a> 
+      <li> 01.49.37.78.56 </li>
+      <li>87 rue des bigornots <br> 75002 Paris</li>
+    </div>
+    <div class="col">
+      <h5>Plan de site</h5>
+      <li>Fonctionnement</li>
+      <li>CGU</li>
+    </div>
+</footer>
+
+<div class="bg-primary">
+  <small class="mx-2 text-light">&copy copyright Frédéric Roblot-Coulanges</small>
+</div>
+
+
+
+
+</body>
+</html>
+
   

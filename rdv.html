@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Centre de kinésithérapie</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
@@ -21,9 +24,10 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto offset-3" id="nav-fs">
-      <li class="nav-item mx-4"><a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a></li>
+      <li class="nav-item mx-4"><a class="nav-link a-underline" href="index.html">Accueil <span class="sr-only">(current)</span></a></li>
       <li class="nav-item mx-4"><a class="nav-link" href="pathologies.html">Pathologies</a></li>
-      <li class="nav-item mx-4"><a class="nav-link" onclick="rendezVous()" href="rdv.html">Rendez-vous</a></li>
+      <li class="nav-item mx-4"><a class="nav-link" href="rdv.html">Rendez-vous</a></li>
+      <li class="nav-item mx-4"><a class="nav-link" href="produits.html">Produits</a></li>
       <li class="nav-item mx-4"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
       <li class="nav-item mx-4"><a class="nav-link" href="contact.html">Contact</a>
       </li>
@@ -62,33 +66,25 @@
 
 <!-- :::début formulaire::: -->
 <main class="container">
-  <div class="row row-cols-2 container mx-auto my-5">
-  <div class="col">
-    <div class="form-floating mb-3">
-      <input type="text" class="form-control" id="floatingInput" placeholder="nom">
-      <label for="floatingInput"></label>
+  <h1 class="display-4 text-center border my-3">Nos consulations</h1>
+
+  <section class="row mb-3">
+    <div class="col">
+      <ul>
+        <li>Les rendez-vous sur ordonnances sont remboursés en partie ou intégralement par la sécurité sociale selon le régime duquel vous dépendez.</li>
+        <li>Les rendez-vous sans ordonnances sont pleins tarifs.</li>
+        <li>Vous pouvez vous référer à la grille tarifaire en cliquant sur <a href="tarifs.html">ce lien.</a></li>
+      </ul>
+     <input type="submit" value="prendre rendez-vous" onclick="rendezVous()" class="btn btn-outline-primary mx-3 shadow">
     </div>
-  </div>
-  <div class="col">
-    <div class="form-floating">
-      <input type="text" class="form-control" id="floatingprenom" placeholder="prénom">
-      <label for="floatingprenom"></label>
+
+    <div class="col">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.9872432495276!2d-0.2754189230895672!3d49.181828677890095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a68c79ab916e3%3A0xcd258d9334ec07d6!2s8%20Rue%20de%20la%20Fraternit%C3%A9%2C%2014840%20D%C3%A9mouville!5e0!3m2!1sfr!2sfr!4v1710699937915!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
     </div>
-  </div>
-  <div class="col">
-    <div class="form-floating mb-3">
-      <input type="email" class="form-control" id="floatingEmail" placeholder="email@">
-      <label for="floatingEmail"></label>
-    </div>
-  </div>
-  <div class="col">
-    <div class="form-floating">
-      <input type="tel" class="form-control" id="floatingTel" placeholder="téléphone">
-      <label for="floatingTel"></label>
-    </div>
-  </div>
-  <input type="submit" value="envoyer" class="btn btn-outline-primary col-2 mx-3">
+  </section>
 </div>
+
+
 </main>
 
 <!-- fin du formulaire -->
