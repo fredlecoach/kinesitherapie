@@ -26,7 +26,7 @@ function rendezVous() {
   
   // Validation pour le téléphone
   do {
-    telephone = prompt("Renseignez votre numéro de téléphone mobile:");
+    telephone = prompt("Votre numéro de téléphone mobile (06 ou 07):");
     if (annuler(telephone)) return; // Si annulé
   } while (!phonevalide.test(telephone)); // Tant que ça ne commence pas par "06" et n'a pas 10 chiffres
 
@@ -132,14 +132,14 @@ function imc(taille, poids) {
     } else if (imcFinal < 34.9) {
         return {
             description: "Obésité modérée",
-            bg: "#FFCC99", // Orange
+            bg: "#FFCC99", // Orange foncé
             fontWeight : "bold",
             couleur: "#000"
         };
     } else if (imcFinal < 39.9) {
         return {
             description: "Obésité sévère",
-            bg: "#E47c23", // Rouge clair
+            bg: "#E47c23", // Rouge 
             fontWeight : "bold",
             couleur: "#fff"
         };
@@ -162,8 +162,8 @@ function calculerIMC() {
         return;
     }
 
-    const imcResult = imc(taille, poids); // Obtenir l'IMC et la bg associée
     const imcFinal = (poids / ((taille / 100) ** 2)).toFixed(2); // Valeur de l'IMC
+    const imcResult = imc(taille, poids); // Obtenir l'IMC et la bg associée
 
     document.getElementById("resultat").value = imcFinal; // Afficher l'IMC
     document.getElementById("imcDescription").textContent = `Votre IMC indique : ${imcResult.description}`; // Afficher la description
