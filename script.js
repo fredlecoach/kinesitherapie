@@ -162,8 +162,8 @@ function calculerIMC() {
         return;
     }
 
-    const imcFinal = (poids / ((taille / 100) ** 2)).toFixed(2); // Valeur de l'IMC
-    const imcResult = imc(taille, poids); // Obtenir l'IMC et la bg associée
+    const imcFinal = (poids / ((taille / 100) ** 2)).toFixed(2); // Valeur de l'IMC dans résultat
+    const imcResult = imc(taille, poids); // Obtenir l'IMC et la description associée
 
     document.getElementById("resultat").value = imcFinal; // Afficher l'IMC
     document.getElementById("imcDescription").textContent = `Votre IMC indique : ${imcResult.description}`; // Afficher la description

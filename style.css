@@ -118,3 +118,9 @@ caption{
 .container-contact{
   margin-bottom: 50px
 }
+
+/* icon panneau triangle */
+.bi-exclamation-triangle{
+  font-size: 30px;
+  color: red;
+}
