@@ -1,6 +1,6 @@
 function rendezVous() {
   const lettre = /^[a-zA-ZàâäæçéèêëîïôœùûüÿÀÂÄÆÇÉÈÊËÎÏÔŒÙÛÜŸ-]+$/;
-  const phonevalide = /^06\d{8}$/; // Commence par "06" et a 8 chiffres après
+  const phonevalide = /^(06|07)\d{8}$/; // Commence par "06" et a 8 chiffres après
   const emailValide = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   let nom = "";
