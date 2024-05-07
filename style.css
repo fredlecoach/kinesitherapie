@@ -124,3 +124,8 @@ caption{
   font-size: 30px;
   color: red;
 }
+
+/* menu actif */
+.active{
+  font-weight: bold;
+}
