@@ -21,6 +21,8 @@ function ajouterAuPanier(produit, quantite) {
   localStorage.setItem("panier", JSON.stringify(panier));
 }
 
+
+//************ FONCTION PANIER ************************* */
 function panier(index) {
   const produit = produits[index];
   const quantite = parseInt(document.querySelectorAll("#quantite")[index].value);
@@ -34,6 +36,8 @@ function panier(index) {
   alert("Produit ajouté au panier.");
 }
 
+
+/********** FONCTION SUPPRIMER DU PANIER ********************* */
 function retirerDuPanier(index) {
   let panier = JSON.parse(localStorage.getItem("panier")) || [];
 
