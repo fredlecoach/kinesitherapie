@@ -33,7 +33,16 @@ function panier(index) {
   }
 
   ajouterAuPanier(produit, quantite);
-  alert("Produit ajouté au panier.");
+  // Demander confirmation
+  const confirmation = confirm("Produit ajouté au panier. Valider ?");
+  
+  if (confirmation) {
+    // Si l'utilisateur confirme, l'ajout reste
+    alert("Produit ajouté au panier.");
+  } else {
+    // Si l'utilisateur annule, retirer le produit du panier
+    retirerDuPanier(produit, quantite);
+  }
 }
 
 
@@ -41,6 +50,7 @@ function panier(index) {
 function retirerDuPanier(index) {
   let panier = JSON.parse(localStorage.getItem("panier")) || [];
 
+  confirm('Êtes vous sûr de vouloir supprimer cet article?')
   // Supprimer le produit à l'index donné
   panier.splice(index, 1);
 

@@ -18,7 +18,7 @@
   </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="retour">
   <a class="navbar-brand mx-3" href="index.html"><img src="./images/logo_kine.png" alt="logo" id="logo"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -164,6 +164,7 @@ produits.forEach((produit, index) => {
 
       <div class="d-flex justify-content-center">
         <button class="btn btn-info" onclick="panier(${index})">Ajouter au panier</button>
+        <a href="#retour" class="mx-2"><i class="bi bi-arrow-up-short text-light bg-info" style="font-size:25px"></i></a>
       </div>
     </article>
   `;

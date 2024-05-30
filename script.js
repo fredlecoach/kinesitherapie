@@ -51,8 +51,10 @@ function rendezVous() {
   let rdv = prompt("Quel jour souhaitez-vous prendre rendez-vous ?");
   if (annuler(rdv)) return; // Arrêter si annulé
   
+  rdv = rdv.toLowerCase();
+
   while (!jours.includes(rdv)) { // Redemander si le jour n'est pas valide
-    rdv = prompt("Veuillez choisir un jour de la semaine (lundi à samedi):");
+    rdv = prompt("Veuillez choisir un jour de la semaine (lundi à samedi):").toLowerCase();
     if (annuler(rdv)) return; // Arrêter si annulé
   }
 
