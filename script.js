@@ -14,13 +14,13 @@ function rendezVous() {
 
   // Validation pour le prénom
   do {
-    prenom = prompt("Renseignez votre prénom:");
+    prenom = prompt("Renseignez votre prénom :");
     if (annuler(prenom)) return; // Si annulé
   } while (!lettre.test(prenom)); // Tant que ça ne correspond pas à des lettres uniquement
   
   // Validation pour le nom
   do {
-    nom = prompt("Renseignez votre nom:");
+    nom = prompt("Renseignez votre nom :");
     if (annuler(nom)) return; // Si annulé
   } while (!lettre.test(nom)); // Tant que ça ne correspond pas à des lettres uniquement
   
@@ -32,12 +32,12 @@ function rendezVous() {
 
   // Validation pour l'adresse e-mail
   do {
-    email = prompt("Renseignez votre adresse e-mail:");
+    email = prompt("Renseignez votre adresse e-mail :");
     if (annuler(email)) return; // Si annulé
   } while (!emailValide.test(email)); // Tant que ça ne correspond pas à une adresse e-mail valide
 
   // Demander confirmation des données saisies
-  const question = `Vous êtes bien M.${nom} ${prenom}?\nVotre numéro de téléphone est ${telephone} ?\nVotre adresse e-mail est ${email}?`;
+  const question = `Vous êtes bien M.${nom} ${prenom}?\nVotre numéro de téléphone est ${telephone} ?\nVotre adresse e-mail est ${email} ?`;
   
   const confirmation = confirm(question);
   
